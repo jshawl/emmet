@@ -1,0 +1,24 @@
+diff --git a/lib/emmet.js b/lib/emmet.js
+index 86dccac..9a5c671 100644
+--- a/lib/emmet.js
++++ b/lib/emmet.js
+@@ -7,7 +7,6 @@ if (typeof module === 'object' && typeof define !== 'function') {
+ define(function(require, exports, module) {
+ 	var global = typeof self != 'undefined' ? self : this;
+ 
+-	var _ = require('lodash');
+ 	var utils = require('./utils/common');
+ 	var actions = require('./action/main');
+ 	var parser = require('./parser/abbreviation');
+diff --git a/package.json b/package.json
+index a89b24d..9ce1b05 100644
+--- a/package.json
++++ b/package.json
+@@ -29,7 +29,6 @@
+     "grunt-contrib-uglify": "~0.2.4"
+   },
+   "dependencies": {
+-    "lodash": "git://github.com/emmetio/lodash.git",
+     "requirejs": "~2.1.9"
+   }
+ }
